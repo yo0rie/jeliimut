@@ -94,10 +94,10 @@ if (heroRoot) {
     createRoot(heroRoot).render(
         <Hero
             profile={{
-                name: heroRoot.dataset.name || 'Nama Kamu',
+                name: heroRoot.dataset.name || 'Jelita Agustin',
                 tagline: heroRoot.dataset.tagline || 'Ceritakan hal yang kamu sukai dan apa yang membuatmu terus melangkah.',
                 avatarUrl: heroRoot.dataset.avatarUrl || '/profile-jelita.png',
-                location: heroRoot.dataset.location || 'Lokasi kamu',
+                location: heroRoot.dataset.location || 'Jakarta, Indonesia',
             }}
         />,
     );

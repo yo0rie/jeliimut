@@ -61,7 +61,11 @@ class ProfilePageTest extends TestCase
 
         $this->get('/')
             ->assertOk()
-            ->assertSee('Nama Kamu')
+            ->assertSee('JA')
+            ->assertSee('Jelita Agustin')
+            ->assertSee('Jakarta, Indonesia')
+            ->assertSee('data-name="Jelita Agustin"', false)
+            ->assertSee('data-location="Jakarta, Indonesia"', false)
             ->assertSee('Karya & cerita.');
     }
 }

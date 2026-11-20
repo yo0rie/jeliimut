@@ -14,7 +14,7 @@
     <body>
         <header class="site-header page-shell" id="top">
             <a class="brand" href="#top" aria-label="Kembali ke atas">
-                {{ collect(explode(' ', trim($profile?->name ?: 'Kamu')))->filter()->take(2)->map(fn ($part) => mb_substr($part, 0, 1))->implode('') }}
+                {{ collect(explode(' ', trim($profile?->name ?: 'Jelita Agustin')))->filter()->take(2)->map(fn ($part) => mb_substr($part, 0, 1))->implode('') }}
             </a>
             <nav class="main-nav" aria-label="Navigasi utama">
                 <a href="#tentang">Tentang</a>
@@ -32,10 +32,10 @@
                 id="hero-root"
                 class="hero page-shell"
                 aria-labelledby="hero-title"
-                data-name="{{ $profile?->name ?: 'Nama Kamu' }}"
+                data-name="{{ $profile?->name ?: 'Jelita Agustin' }}"
                 data-tagline="{{ $profile?->tagline ?: 'Ceritakan hal yang kamu sukai, nilai yang kamu pegang, dan apa yang membuatmu terus melangkah.' }}"
                 data-avatar-url="{{ $profile?->avatar_url ?: asset('profile-jelita.png') }}"
-                data-location="{{ $profile?->location ?: 'Lokasi kamu' }}"
+                data-location="{{ $profile?->location ?: 'Jakarta, Indonesia' }}"
             ></section>
 
             <section class="content-section page-shell" id="tentang" aria-labelledby="about-title">
@@ -51,7 +51,7 @@
                     <dl class="detail-list">
                         <div class="detail-row">
                             <dt>Nama</dt>
-                            <dd>{{ $profile?->name ?: 'Nama lengkapmu' }}</dd>
+                            <dd>{{ $profile?->name ?: 'Jelita Agustin' }}</dd>
                         </div>
                         <div class="detail-row">
                             <dt>Aktivitas</dt>
@@ -59,7 +59,7 @@
                         </div>
                         <div class="detail-row">
                             <dt>Domisili</dt>
-                            <dd>{{ $profile?->location ?: 'Kota tempat tinggalmu' }}</dd>
+                            <dd>{{ $profile?->location ?: 'Jakarta, Indonesia' }}</dd>
                         </div>
                         <div class="detail-row">
                             <dt>Email</dt>
