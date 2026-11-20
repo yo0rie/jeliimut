@@ -668,8 +668,7 @@ a {
         top: -76px;
         background:
             linear-gradient(180deg, rgb(255 247 250 / 92%) 0%, rgb(255 247 250 / 82%) 58%, rgb(255 247 250 / 55%) 100%),
-            url('/hero-background.jpeg') center top / 100% auto no-repeat;
-        background-color: var(--paper);
+            url('/hero-background.jpeg') center 42% / cover no-repeat;
     }
 
     .hero h1 {
