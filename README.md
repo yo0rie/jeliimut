@@ -9,7 +9,7 @@
 
 ## Menjalankan djeliweb setelah clone
 
-Jalankan perintah berikut di PowerShell dari folder proyek. `migrate --seed` akan membuat data profil awal, termasuk nama Jelita Agustin, di database SQLite lokal.
+Pastikan PHP 8.4.1 atau lebih baru, Composer, dan Node.js/npm sudah terpasang. Jalankan perintah berikut di PowerShell dari folder proyek. Opsi `--seed` membuat data profil awal, termasuk nama Jelita Agustin, di database SQLite lokal.
 
 ```powershell
 composer install
